@@ -48,8 +48,8 @@ body {
             rgba(8, 13, 23, 0.35)
         ),
         url("./megha-portrait.png");
-    background-position: center, center 20%;
-    background-size: 90% auto;
+    background-position: center, center 18%;
+    background-size: 80% auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
