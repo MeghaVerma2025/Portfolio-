@@ -18,3 +18,45 @@
 .project-action{align-self:flex-start;display:inline-flex;gap:20px;align-items:center;border:1px solid rgba(143,182,216,.28);border-radius:7px;padding:9px 12px;margin-top:15px;background:rgba(143,182,216,.07);color:#c6e1f6;font:600 11px var(--font);cursor:pointer}.project-action:hover{background:rgba(143,182,216,.15);transform:translateY(-1px)}
 .project-dialog{width:min(500px,calc(100% - 32px));border:1px solid rgba(174,202,231,.3);border-radius:16px;background:#101a29;color:#edf5fc;padding:30px;box-shadow:0 30px 100px #000a}.project-dialog::backdrop{background:rgba(1,5,12,.78);backdrop-filter:blur(5px)}.dialog-close{float:right;border:1px solid var(--line);border-radius:7px;background:transparent;color:#d9e7f5;font-size:22px;width:32px;height:32px;cursor:pointer}.project-dialog h2{font:800 30px var(--display);margin:12px 0}.project-dialog>p:not(.section-index){color:#9eafc3;font-size:13px;line-height:1.85}.dialog-status{display:inline-block;color:#c3e0f4;border:1px solid #385774;background:#182b40;border-radius:30px;padding:6px 10px;font-size:10px}.project-dialog .dialog-note{border-top:1px solid var(--line);padding-top:15px;font-size:10px!important}
 @media(max-width:720px){.portrait-card{width:112px;right:0;top:0}.portrait-card img{height:135px}.portrait-caption span{font-size:8px}.portrait-caption small{font-size:7px}.hero-visual{padding-top:36px}.visual-card{margin-right:12px}.chip-top{top:4px;right:112px}.project-dialog{padding:23px}}@media(max-width:400px){.portrait-card{width:95px}.portrait-card img{height:110px}.chip-top{right:96px}.hero-visual{padding-top:42px}}
+
+/* Homepage: full-screen portrait background */
+
+.hero {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 100px max(24px, calc((100% - 1160px) / 2));
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(5, 9, 15, 0.96) 0%,
+            rgba(5, 9, 15, 0.82) 42%,
+            rgba(5, 9, 15, 0.35) 100%
+        ),
+        url("./megha-portrait.png");
+
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Keep the homepage content above the background */
+
+.hero-copy,
+.hero-visual {
+    position: relative;
+    z-index: 1;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 720px) {
+    .hero {
+        padding: 65px 18px;
+        background-position: 60% center;
+    }
+}
