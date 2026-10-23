@@ -48,9 +48,8 @@ body {
             rgba(8, 13, 23, 0.35)
         ),
         url("./megha-portrait.png");
-    background-position: center, center 25%;
-    background-size: cover;
+    background-position: center, center 20%;
+    background-size: 90% auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
-};background-position:center 22%;background-size:cover;background-attachment:fixed;background-repeat:no-repeat}
-.hero-copy{max-width:760px}
+}
