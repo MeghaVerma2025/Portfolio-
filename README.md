@@ -20,3 +20,8 @@ Open `index.html` in a browser. No build step is required.
 
 ## Publish with GitHub Pages
 The site is configured for GitHub Pages from the `main` branch and `/ (root)` folder.
+
+## Homepage design note
+- The portrait remains the full-page background image.
+- The decorative floating workspace panel has been removed from the hero section.
+- Section headings use labels without numeric prefixes.
